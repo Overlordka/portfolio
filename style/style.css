@@ -27,8 +27,8 @@ figure{
 /* variabler */
 
 :root{
-    --primary-color: #b10000;
-    --secondary-color: #fff2d8;
+    --primary-color: #000000;
+    --secondary-color: #3c3c3c;
     --bright-color: #fff;
 }
 
@@ -43,19 +43,28 @@ figure{
 }
 
 .header{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.801);
 }
 
 .main{
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.73);
     margin-top: 35px;
     margin-bottom: 35px;
 }
 
 .logo{
     display: block;
-    padding: 10px 0;
+    padding-top: 10px;
+    text-decoration: none;
+    color: var(--bright-color);
+}
+
+.logo h1{
+    margin-block-end: 0;
+}
+
+hr{
+    margin: 0;
 }
 
 .search{
@@ -116,10 +125,19 @@ body{
 
 h1, h2, h3, h4, h5, h6, .menu-item {
     text-transform: uppercase;
-    font-family: "Ranchers", serif;
+    /* font-family: "Gruppo", serif; */
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.under-title{
+    font-family: "Gruppo", serif;
     font-weight: 400;
     font-style: normal;
-  }
+    margin-block-start: 0;
+    color: var(--bright-color);
+}
   
 
 
@@ -148,7 +166,7 @@ h1, h2, h3, h4, h5, h6, .menu-item {
 .contact-form input[type="submit"]{
     background: var(--primary-color);
     color: var(--bright-color);
-    font-family: "Ranchers", serif;
+    font-family: "Monserrat", serif;
     border:none;
 }
 
@@ -164,13 +182,13 @@ h1, h2, h3, h4, h5, h6, .menu-item {
 
 /* Desktop styles */
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 850px){
 
 
     .flex-desktop{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         gap: 20px;
     }
 
