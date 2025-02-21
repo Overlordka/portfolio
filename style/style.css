@@ -1,0 +1,197 @@
+/* farver
+Rød: #b10000
+Beige: #fff2d8 */
+
+/* Resets */
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img, svg, video{
+    max-width: 100%;
+}
+
+figure{
+    margin: 0;
+}
+
+/* ________________________________________________________________________ */
+
+/* variabler */
+
+:root{
+    --primary-color: #b10000;
+    --secondary-color: #fff2d8;
+    --bright-color: #fff;
+}
+
+/* ________________________________________________________________________ */
+
+/* LAYOUT */
+
+.center-max{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header{
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.801);
+}
+
+.main{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.73);
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.logo{
+    display: block;
+    padding: 10px 0;
+}
+
+.search{
+    display: flex;
+    padding: 10px 0;
+}
+
+.hidden-on-mobile{
+    display: none;
+}
+
+.burger{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.menu-item{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.menu-item:hover{
+    color: var(--secondary-color);
+}
+
+
+
+.menu-container{
+    background-color: var(--primary-color);
+    padding: 5px 0;
+    
+}
+
+.menu-container a{
+    color: var(--bright-color);
+    text-decoration: none;
+}
+
+.footer{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.footer a{
+    color: var(--primary-color);
+}
+
+.footer-inner{
+    padding: 10px 0;
+}
+
+/* Typografi */
+body{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .menu-item {
+    text-transform: uppercase;
+    font-family: "Ranchers", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+/* search-inputs */
+
+.search-btn{
+    background-color: var(--primary-color);
+    box-sizing: content-box;
+    padding: 4px;
+}
+
+/* ________________________________________________________________________ */
+
+/* Kontakt form */
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.field{
+    padding: 10px 0;
+}
+
+.contact-form input[type="submit"]{
+    background: var(--primary-color);
+    color: var(--bright-color);
+    font-family: "Ranchers", serif;
+    border:none;
+}
+
+.foto-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+::backdrop{
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 800px){
+
+
+    .flex-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .main-menu{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .menu-item{
+        margin: 0;
+    }
+
+    .burger{
+        display: none; 
+    }
+
+    .article{
+        min-width: 66.7%;
+    }
+
+
+}
+
