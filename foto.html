@@ -6,7 +6,8 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <script src="js/burger.js" defer></script>
     <script src="js/galleri.js" defer></script>
@@ -37,19 +38,61 @@
     <main class="main center-max flex-desktop">
         <article class="article">
             <h1>VELKOMMEN TIL ARNES' GaLLeri</h1>
-            <div class="foto-grid">
-                <img src="img/1.jpg" alt="to elefanter" onclick="modal(this)">
-                <img src="img/2.jpg" alt="en ræv" onclick="modal(this)">
-                <img src="img/3.jpg" alt="en løve" onclick="modal(this)">
-                <img src="img/4.jpg" alt="gorilla" onclick="modal(this)">
-                <img src="img/5.jpg" alt="galleri" onclick="modal(this)">
-                <img src="img/6.jpg" alt="galleri" onclick="modal(this)">
-            </div>
+            <ul class="foto-grid">
+                <li onclick="modal(this)">
+                    <img src="img/1.jpg" alt="to elefanter">
+                    <div class="model-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                    </div>
+                </li>
+                <li onclick="modal(this)">
+                    <img src="img/2.jpg" alt="en ræv">
+                    <div class="model-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                    </div>
+                </li>
+                <li onclick="modal(this)">
+                    <img src="img/3.jpg" alt="en løve">
+                    <div class="model-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/3.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                    </div>
+                </li>
+                <li onclick="modal(this)">
+                    <img src="img/4.jpg" alt="gorilla">
+                    <div class="model-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/4.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                    </div>
+                </li>
+                <li onclick="modal(this)">
+                    <img src="img/5.jpg" alt="galleri">
+                    <div class="model-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/5.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                    </div>
+                </li>
+                <li onclick="modal(this)">
+                    <img src="img/6.jpg" alt="galleri">
+                    <div class="model-content">
+                        <h3>Overskrift</h3>
+                        <img src="img/6.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                    </div>
+                </li>              
+            </ul>
             <dialog class="dialog" id="dialog">
                 <button id="close-dialog" onclick="closeDialog()">Luk</button>
-                <figure>
-                    <img src="" alt="" id="dialog-img">
-                </figure>
+                <div id="dialog-content">
+
+                </div>
             </dialog>
         </article>
         <aside class="aside">

@@ -67,6 +67,20 @@ figure{
 }
 
 .article{
+    padding-left: 10px;
+}
+
+.aside{
+    padding-right: 10px;
+}
+
+.logo-image{
+    display: flex;
+}
+
+.logo-image a img{
+    width: 50px;
+    height: 50px;
     padding: 10px;
 }
 
@@ -192,6 +206,12 @@ h1, h2, h3, h4, h5, h6, .menu-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.model-content{
+    display: none;
 }
 
 ::backdrop{
@@ -214,6 +234,12 @@ h1, h2, h3, h4, h5, h6, .menu-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 20px;
+    }
+
+    .flex-desktop-justify{
+        display: flex;
+        justify-content: space-between;
         gap: 20px;
     }
 
