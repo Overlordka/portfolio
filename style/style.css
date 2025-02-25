@@ -64,7 +64,7 @@ figure{
 }
 
 .first-parameter{
-    margin-top: -30px;
+    margin-top: 0px;
 }
 
 img {
@@ -142,6 +142,12 @@ h1{
     margin-bottom: 20px;
 }
 
+.white{
+    color: var(--primary-color);
+    background-color: var(--bright-color);
+
+}
+
 .article{
     padding: 10px;
 }
@@ -152,6 +158,7 @@ h1{
 
 .logo-image{
     display: flex;
+    justify-content: center;
 }
 
 .logo-image a img{
@@ -283,10 +290,20 @@ h1, h2, h3, h4, h5, h6, .menu-item {
 
 .foto-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
     padding: 0;
     list-style: none;
+}
+
+.dialog-first{
+    display: flex;
+    gap: 15px;
+    max-height: 200px;
+}
+
+.dialog-by3{
+    max-height: 100%;
 }
 
 .model-content{
@@ -300,6 +317,10 @@ h1, h2, h3, h4, h5, h6, .menu-item {
 /* Desktop styles */
 
 @media screen and (min-width: 850px){
+
+    .first-parameter{
+        margin-top: -30px;
+    }
 
     .generated-img{
         height: 512px;

@@ -16,77 +16,86 @@
     <header class="header">
         <div class="center-max flex-desktop">
             <a href="index.html" class="logo">
-                <img src="./img/logo.png" alt="Arne - jeg er for cool">
+                <h1>Kostiantyn Karpenko</h1>
+                <hr>
+                <h2 class="under-title">Olkeksandrivych</h2>              
             </a>
-            <form action="search.html" class="search">
+            <!-- <form action="search.html" class="search">
                 <input type="search" name="" id="" class="search-bar">
                 <input type="image" src="./img/search.png" alt="" class="search-btn">
-            </form>
-        </div>
-        <div class="menu-container">
-            <button class="burger" onclick="toggleMenu();">
-                <img src="img/burger-icon.png" alt="menu">
-            </button>
-            <nav class="center-max main-menu hidden-on-mobile" id="main-menu">
-                <a href="index.html" class="menu-item">FORSIDE</a>
-                <a href="foto.html" class="menu-item"> MIT FOTOALBUM</a>
-                <a href="kontakt.html" class="menu-item">KONTAKT</a>
-            </nav>
+            </form> -->
+            <div class="menu-container">
+                
+                <button class="burger" onclick="toggleMenu();">
+                    <img src="img/burger-icon.png" alt="menu">
+                </button>
+                <nav class="center-max main-menu hidden-on-mobile" id="main-menu">
+                    <a href="index.html" class="menu-item">FORSIDE</a>
+                    <a href="foto.html" class="menu-item"> MIT FOTOALBUM</a>
+                    <a href="kontakt.html" class="menu-item">KONTAKT</a>
+                </nav>    
+            </div>
         </div>
     </header>
 
     <main class="main center-max flex-desktop">
         <article class="article">
-            <h1>VELKOMMEN TIL ARNES' GaLLeri</h1>
+            <section class="section">
+                <h1>VELKOMMEN TIL ARNES' GaLLeri</h1>
             <ul class="foto-grid">
-                <li onclick="modal(this)">
-                    <img src="img/1.jpg" alt="to elefanter">
-                    <div class="model-content">
-                        <h3>Overskrift</h3>
-                        <img src="img/1.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                    </div>
-                </li>
-                <li onclick="modal(this)">
-                    <img src="img/2.jpg" alt="en ræv">
-                    <div class="model-content">
-                        <h3>Overskrift</h3>
-                        <img src="img/2.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                    </div>
-                </li>
-                <li onclick="modal(this)">
-                    <img src="img/3.jpg" alt="en løve">
-                    <div class="model-content">
-                        <h3>Overskrift</h3>
-                        <img src="img/3.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                    </div>
-                </li>
-                <li onclick="modal(this)">
-                    <img src="img/4.jpg" alt="gorilla">
-                    <div class="model-content">
-                        <h3>Overskrift</h3>
-                        <img src="img/4.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                    </div>
-                </li>
-                <li onclick="modal(this)">
-                    <img src="img/5.jpg" alt="galleri">
-                    <div class="model-content">
-                        <h3>Overskrift</h3>
-                        <img src="img/5.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                    </div>
-                </li>
-                <li onclick="modal(this)">
-                    <img src="img/6.jpg" alt="galleri">
-                    <div class="model-content">
-                        <h3>Overskrift</h3>
-                        <img src="img/6.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                    </div>
-                </li>              
+                <div class="dialog-first">
+                    <li onclick="modal(this)">
+                        <img class="dialog-by3" src="img/1.jpg" alt="to elefanter">
+                        <div class="model-content">
+                            <h3>Overskrift</h3>
+                            <img src="img/1.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                        </div>
+                    </li>
+                    <li onclick="modal(this)">
+                        <img class="dialog-by3" src="img/2.jpg" alt="en ræv">
+                        <div class="model-content">
+                            <h3>Overskrift</h3>
+                            <img src="img/2.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                        </div>
+                    </li>
+                    <li onclick="modal(this)">
+                        <img class="dialog-by3" src="img/3.jpg" alt="en løve">
+                        <div class="model-content">
+                            <h3>Overskrift</h3>
+                            <img src="img/3.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                        </div>
+                    </li>
+                </div>
+                <div class="dialog-first">
+                    <li onclick="modal(this)">
+                        <img class="dialog-by3" src="img/4.jpg" alt="gorilla">
+                        <div class="model-content">
+                            <h3>Overskrift</h3>
+                            <img src="img/4.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                        </div>
+                    </li>
+                    <li onclick="modal(this)">
+                        <img class="dialog-by3" src="img/5.jpg" alt="galleri">
+                        <div class="model-content">
+                            <h3>Overskrift</h3>
+                            <img src="img/5.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                        </div>
+                    </li>
+                    <li onclick="modal(this)">
+                        <img class="dialog-by3" src="img/6.jpg" alt="galleri">
+                        <div class="model-content">
+                            <h3>Overskrift</h3>
+                            <img src="img/6.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                        </div>
+                    </li>
+                </div>
+                              
             </ul>
             <dialog class="dialog" id="dialog">
                 <button id="close-dialog" onclick="closeDialog()">Luk</button>
@@ -94,6 +103,8 @@
 
                 </div>
             </dialog>
+
+            </section>
         </article>
         <aside class="aside">
 
@@ -111,39 +122,5 @@
             </p>
         </aside>
     </main>
-    <footer class="footer">
-        <div class="footer-inner center-max flex-desktop">
-            <section class="footer-section">
-                <h3>Arnes Portfolio</h3>
-                <p>
-                    Paradisæblevej 13
-                </p>
-                <p>
-                    1313 Andeby
-                </p>
-            </section>
-            <section class="footer-section">
-                <h3>SoMe</h3>
-                <p>
-                    Instagram
-                </p>
-                <p>
-                    FaceBook
-                </p>
-            </section>
-            <section class="footer-section">
-                <h3>Kontakt mig</h3>
-                <p>
-                    E-mail: <a href="mailto:info@arneNougatgreen.ru">
-                        info@arneNougatgreen.ru
-                    </a>
-                </p>
-                <p>
-                    Telefon: <a href="tel:555555555">555-555-555</a> 
-                </p>
-            </section>
-        </div>
-    </footer>
-    
 </body>
 </html>
