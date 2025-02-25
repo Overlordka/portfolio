@@ -10,13 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
     <script src="js/burger.js" defer></script>
-    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="center-max flex-desktop">
             <a href="index.html" class="logo">
-                <h1>Kostiantyn Karpenko</h1>
+                <h1>Kostiantyn Koarpenko</h1>
                 <hr>
                 <h2 class="under-title">Olkeksandrivych</h2>              
             </a>
@@ -41,98 +40,10 @@
     <main class="main flex-desktop-justify">
         <article class="article">
             <section class="section">
-                <h2>Om mig</h2>
+                <h1>Om mig</h1>
             <p>
                 Jeg hedder Kostia, og jeg er en 17-årig studerende på GF2 på Roskilde Tekniske Skole, hvor jeg uddanner mig til webudvikler. Jeg brænder for at skabe brugervenlige og moderne websites og arbejder løbende på at udvikle mine færdigheder inden for design og kodning.
             </p>
-            </section>
-            <section class="section">
-                <div class="title">
-                    <h2 class="title-projekt">Sidste projekt</h2>
-                    <hr>
-                    <h2 class="under-title center">AI image GENERATOR</h2>
-                </div>
-                <div class="wrapper">
-                    <figure class="generated-img">
-                        <img id="avatar-image" src="" alt="" width="512" height="512">
-                    </figure>
-                    <form action="" onsubmit="generate(this); return false;">
-                        <div class="field first-parameter">
-                            <h3>GENDER</h3>
-                            <input type="radio" name="gender" id="male" value="male">
-                            <label for="male">Mand</label>
-                            <input type="radio" name="gender" id="female" value="female">
-                            <label for="female">Female</label>
-                        </div>
-                        <div class="field">
-                            <h3>AGE</h3>
-                            <div class="range">
-                                
-                                <input type="range" name="age" id="age" min="12" max="100" value="12"
-                                oninput="ageValue.textContent = this.value">
-                            <label for="age">AGE: <span id="ageValue">12</span></label>
-                                
-                            </div>
-                        </div>
-                        <div class="field">
-                            <h3>HÅR</h3>
-                            <select name="hair" id="dropdown">
-                                <option  value="red">Rød hår</option>
-                                <option  value="brown">Brunt hår</option>
-                                <option  value="white">Hvid hår</option>
-                                <option  value="blond">Blond hår</option>
-                                <option  value="black">Sort hår</option>
-                            </select>
-                            <input type="radio" name="hairType" id="short" value="short">
-                            <label for="short">Kort hår</label>  
-                            <input type="radio" name="hairType" id="long" value="long">
-                            <label for="long">Længe hår</label>    
-                        </div>
-                        <div class="field">
-                            <h3>NATIONALITET</h3>
-                            <select name="nationality" id="dropdown">
-                                <option value="evropean">evropean</option>
-                                <option value="asian">asian</option>
-                                <option value="african">african</option>
-                                <option value="american">american</option>
-                            </select>
-                        </div>
-                        <div class="field">
-                            <h3>TØJ</h3>
-                            <select name="cloth" id="dropdown">
-                                <option value="t-shirt">t-shirt</option>
-                                <option value="jacket">jacket</option>
-                                <option value="dress">dress</option>
-                                <option value="sweater">sweater</option>
-                                <option value="coat">coat</option>
-                            </select>
-                        </div>
-            
-                        <div class="field">
-                            <h3>Miljø</h3>
-                            <select name="background" id="dropdown">
-                                <option value="solid black">black</option>
-                                <option value="city">city</option>
-                                <option value="winter">winter</option>
-                                <option value="summer">summer</option>
-                                <option value="supercar">supercar</option>
-                                <option value="mountain">mountain</option>
-                            </select>
-                        </div>
-            
-                        <div class="field">
-                            <h3>Type</h3>
-                            <select name="type" id="dropdown">
-                                <option value="cartoon">cartoon</option>
-                                <option value="realistic">realistic</option>
-                                <option value="anime">anime</option>
-                            </select>
-                        </div> 
-                    </form>  
-                </div>
-                <div class="generate">
-                    <input class="generate-button" type="submit" value="Generer">
-                </div>
             </section>
         </article>
         <aside class="aside">
