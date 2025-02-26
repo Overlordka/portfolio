@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <script src="js/burger.js" defer></script>
     <script src="js/galleri.js" defer></script>
+    <script src="js/slider.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -31,95 +32,79 @@
                 </button>
                 <nav class="center-max main-menu hidden-on-mobile" id="main-menu">
                     <a href="index.html" class="menu-item">FORSIDE</a>
-                    <a href="foto.html" class="menu-item"> MIT FOTOALBUM</a>
+                    <a href="foto.html" class="menu-item"> PORTFOLIO</a>
                     <a href="kontakt.html" class="menu-item">KONTAKT</a>
                 </nav>    
             </div>
         </div>
     </header>
 
-    <main class="main center-max flex-desktop">
+    <main class="main center-max flex-none">
         <article class="article">
             <section class="section">
-                <h1>VELKOMMEN TIL ARNES' GaLLeri</h1>
-            <ul class="foto-grid">
-                <div class="dialog-first">
-                    <li onclick="modal(this)">
-                        <img class="dialog-by3" src="img/1.jpg" alt="to elefanter">
-                        <div class="model-content">
-                            <h3>Overskrift</h3>
-                            <img src="img/1.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                        </div>
-                    </li>
-                    <li onclick="modal(this)">
-                        <img class="dialog-by3" src="img/2.jpg" alt="en ræv">
-                        <div class="model-content">
-                            <h3>Overskrift</h3>
-                            <img src="img/2.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                        </div>
-                    </li>
-                    <li onclick="modal(this)">
-                        <img class="dialog-by3" src="img/3.jpg" alt="en løve">
-                        <div class="model-content">
-                            <h3>Overskrift</h3>
-                            <img src="img/3.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                        </div>
-                    </li>
+                <h1>VELKOMMEN TIL min Portfolio</h1>
+                <div class="buttons">
+                    <button id="scrollUp">▲</button>
                 </div>
-                <div class="dialog-first">
-                    <li onclick="modal(this)">
-                        <img class="dialog-by3" src="img/4.jpg" alt="gorilla">
-                        <div class="model-content">
-                            <h3>Overskrift</h3>
-                            <img src="img/4.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                        </div>
-                    </li>
-                    <li onclick="modal(this)">
-                        <img class="dialog-by3" src="img/5.jpg" alt="galleri">
-                        <div class="model-content">
-                            <h3>Overskrift</h3>
-                            <img src="img/5.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                        </div>
-                    </li>
-                    <li onclick="modal(this)">
-                        <img class="dialog-by3" src="img/6.jpg" alt="galleri">
-                        <div class="model-content">
-                            <h3>Overskrift</h3>
-                            <img src="img/6.jpg" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
-                        </div>
-                    </li>
+                <div class="slider-container">
+                    <ul class="foto-grid slider">
+                        <li onclick="modal(this)">
+                            <img class="dialog-by3" src="logo/portfolio1.png" alt="to elefanter">
+                            <div class="model-content">
+                                <h3>Overskrift</h3>
+                                <img src="img/1.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                            </div>
+                            </li>
+                        <li onclick="modal(this)">
+                            <img class="dialog-by3" src="logo/portfolio2.png" alt="en ræv">
+                            <div class="model-content">
+                                <h3>Overskrift</h3>
+                                <img src="img/2.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                            </div>
+                        </li>
+                            <li onclick="modal(this)">
+                            <img class="dialog-by3" src="logo/portfolio3.png" alt="en løve">
+                            <div class="model-content">
+                                <h3>Overskrift</h3>
+                                <img src="img/3.jpg" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui libero, nobis iure modi ullam sint et sit blanditiis vero maxime illo corrupti mollitia minus? Aliquid illo aperiam incidunt maxime ipsum.</p>
+                            </div>
+                        </li>          
+                    </ul>
                 </div>
-                              
-            </ul>
-            <dialog class="dialog" id="dialog">
-                <button id="close-dialog" onclick="closeDialog()">Luk</button>
-                <div id="dialog-content">
+                <div class="buttons">
+                    <button id="scrollDown">▼</button>
+                </div>
+                <dialog class="dialog" id="dialog">
+                    <button id="close-dialog" onclick="closeDialog()">Luk</button>
+                    <div id="dialog-content">
 
-                </div>
-            </dialog>
+                    </div>
+                </dialog>
 
             </section>
         </article>
         <aside class="aside">
-
-            <h2>CSS FLEXBOX</h2>
-            <p>
-                Denne svedige side er bygget op med flexbox modellen. Så slipper man for at bruge floats/ clear, inline-block, display:table eller andre nederen hacks.
-            </p>
-            <h2>BROWSER SUPPORT:</h2>
-            <p> 
-                Flexbox modellen er efterhånden rigtig godt understøttet i alle moderne browsere.
-            </p>
-            <h2>HVORDAN GØR MAN, ARNE?</h2>
-            <p>
-                Jo... For at få sine elementer til at tilpasse sig flexbox modellen, skal man altså lige gide give deres umidelbare forældre-element display-proprtien flex
-            </p>
+            <section class="section">
+                <h2>Om mig</h2>
+                <p>
+                    Hej! Jeg hedder Kostia, og jeg er en 17-årig studerende på GF2 på Roskilde Tekniske Skole, hvor jeg uddanner mig til webudvikler. Jeg brænder for at skabe moderne og brugervenlige hjemmesider og arbejder konstant på at udvikle mine færdigheder inden for frontend- og backend-udvikling.         
+                </p>
+                <h2>Mine færdigheder</h2>
+                <p> 
+                    HTML, CSS og JavaScript <br> Responsive design <br> Grundlæggende UX/UI <br> Basis i backend-udvikling
+                </p>
+                <h2>Projekter</h2>
+                <p>
+                    Jeg har allerede arbejdet på nogle spændende projekter, herunder en hjemmeside til min families massageklinik. Jeg elsker at eksperimentere med nye teknologier og forbedre mine designs.
+                </p>
+                <h2>Kontakt</h2>
+                <p>
+                    Hvis du vil samarbejde eller har spørgsmål, er du velkommen til at kontakte mig!
+                </p>
+            </section>
         </aside>
     </main>
 </body>
